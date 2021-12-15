@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Skwebtech</title>
+    <style>
+        .container-fluid {
+            background-color: whitesmoke;
+        }
+        
+        .container-fluid .typed-cursor {
+            font-size: 35px;
+            font-weight: bolder;
+        }
+        
+        .card:hover {
+            cursor: pointer;
+            box-shadow: 10px 10px 20px rgb(168, 166, 166);
+            transition: all linear .3s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav bar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bolder fs-3" href="index.html">Skwebtech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 fw-bold mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-danger" type="submit">Search</button>
+                </form>
+                <div class="row ms-lg-1">
+                    <div class="col-lg-2 mx-lg-0 col-md-1 my-md-3 col-sm-1 my-sm-3 me-sm-5 mt-3">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Login</button>
+                    </div>
+                    <div class="col-lg-2 col-md-1 my-md-3 mx-md-2 col-sm-2 my-sm-3 my-3">
+                        <button type="button" class="btn btn-danger mx-lg-4" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar end -->
+
+
+    <!-- Login Section start -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form class="modal-content">
+
+                <div class="modal-header text-light bg-primary">
+                    <h5 class="modal-title" id="exampleModalLabel">Login Here</h5>
+                    <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary d-block w-100">Login</button>
+                </div>
+
+                <div class="row container">
+                    <p class="col-lg-8 col-md-8 col-sm-8 col-12">Not a Memeber Sign Up Now?</p>
+                    <a href="#exampleModal1" class="col-lg-4 col-md-4 col-sm-4 col-12 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Login Section end -->
+
+    <!-- sign up section start -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form class="modal-content">
+                <div class="modal-header text-light bg-primary">
+                    <h5 class="modal-title" id="exampleModalLabel">SignUp</h5>
+                    <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <div class="col-lg-6">
+                            <label for="firstname" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstname">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="firstname" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="firstname"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary d-block w-100">SignUp</button>
+                </div>
+                <div class="row container">
+                    <p class="col-lg-8 col-md-8 col-sm-8 col-12">Already have an acoount?</p>
+                    <a href="#exampleModal" class="col-lg-4 col-md-4 col-sm-4 col-12 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Login here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- sign up section end -->
+
+    <!-- banner section start -->
+    <div class="container-fluid w-100 text-center py-lg-5 py-md-5 py-sm-5 py-4">
+        <h4 class="h1 text-center">Welcome to the Skwebtech</h4>
+        <p class="h2">I'm Salman a </p> <span class="typed h2"></span>
+        <div class="container-fluid mt-5">
+            <div class="d-flex justify-content-center">
+                <a href="about.html">
+                    <button type="button" class="btn btn-danger mx-lg-3 mx-md-3 mx-sm-3 mx-3 ">About</button>
+                </a>
+                <a href="projects.html">
+                    <button type="button" class="btn btn-success  ">Projects</button>
+                </a>
+                <a href="contact.html">
+                    <button type="button" class="btn btn-primary mx-lg-3 mx-sm-3 mx-3 mx-md-3">Contact</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- banner section end -->
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-sm-4 mb-4">
+                <a href="about.html" class="text-decoration-none text-dark">
+                    <div class="card">
+                        <img src="images/pexels-fauxels-3183197.jpg" class="card-img-top" alt="Image not found">
+                        <div class="card-body">
+                            <h5 class="card-title">About Me</h5>
+                            <p class="card-text">My name is Salman Saifi. I am a freelancer, web developer and Python full stack developer</p>
+                            <a href="about.html" class="btn btn-primary mt-3">About Me</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6  mb-4">
+                <a href="projects.html" class="text-decoration-none text-dark">
+                    <div class="card">
+                        <img src="images/pexels-fauxels-3184418.jpg" class="card-img-top" alt="Image not found">
+                        <div class="card-body">
+                            <h5 class="card-title">Projects</h5>
+                            <p class="card-text">Some of the projects which I am creating using Html, Css, JavaScript, Jquery and Bootstrap...</p>
+                            <a href="projects.html" class="btn btn-primary mt-3">Go to Project Section</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <a href="contact.html" class="text-decoration-none text-dark">
+                    <div class="card">
+                        <img src="images/pexels-ivan-bertolazzi-2681319.jpg" class="card-img-top" alt="Image not found">
+                        <div class="card-body">
+                            <h5 class="card-title">Contact Me</h5>
+                            <p class="card-text">If you want a website of your business then you can contact me to create a creative website...</p>
+                            <a href="contact.html" class="btn btn-primary mt-3">Contact Me</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer section start -->
+    <div class="container-fluid bg-dark text-white text-center py-2">
+        <p class="h5">Copyright © 2021-2022 skwebtech</p>
+    </div>
+    <!-- footer section end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('.typed', {
+            strings: ['Freelancer', 'Web Developer', 'UI/UX Designer', 'Python Full Stack Developer'],
+            smartBackspace: true,
+            typeSpeed: 100,
+            loop: true,
+            startDelay: 100,
+            backSpeed: 50,
+        });
+    </script>
+
+
+</body>
+
+</html>
